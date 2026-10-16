@@ -1,7 +1,8 @@
 # CampusLostFound - Lost & Found DApp with Reward Escrow
 
 **Course:** Blockchain Technology (CSE4444) - Assignment 2
-**Name:** `<Your Name>`  **Registration No:** `<Reg No>`
+**Name:** Ranvir Sharma
+**Registration No:** 230905057
 
 ---
 
