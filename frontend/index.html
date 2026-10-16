@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusLostFound DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CampusLostFound</h1>
+    <p>Lost something? Lock a reward on-chain. Found something? Claim it.</p>
+  </header>
+
+  <section class="card">
+    <button id="connectBtn">Connect MetaMask</button>
+    <div id="walletInfo">Not connected</div>
+    <label>Contract address
+      <input id="contractAddr" placeholder="0x... (from Remix deployment)">
+    </label>
+    <button id="loadBtn">Load Contract</button>
+    <div id="contractInfo"></div>
+  </section>
+
+  <section class="card">
+    <h2>Report a lost item</h2>
+    <input id="desc" placeholder="Description (e.g. Black HP laptop bag)" maxlength="200">
+    <input id="loc" placeholder="Last seen location (e.g. Library, 2nd floor)">
+    <input id="reward" type="number" step="0.001" placeholder="Reward in ETH">
+    <button id="reportBtn">Report &amp; Lock Reward</button>
+  </section>
+
+  <section class="card">
+    <h2>Items <button id="refreshBtn" class="small">Refresh</button></h2>
+    <div id="items"></div>
+  </section>
+
+  <div id="status"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
